@@ -10,7 +10,9 @@ name: Build_x86_64
 on: 
   release:
     types: [published]
-
+  
+  schedule:
+    - cron: 0 20 * * *
   push:
     branches: 
       - master
